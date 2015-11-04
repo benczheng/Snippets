@@ -8,7 +8,7 @@ __status__ = "Test"
 
 class myClass:
     def __init__(self, name, month, day, year, action):
-        #Constructor
+        """Constructor"""
         self.name = name
         self.month = month
         self.day = day
