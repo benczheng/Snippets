@@ -1,0 +1,80 @@
+#!/usr/bin/env python
+
+"""
+BagOfWords.py
+
+Changelog
+    Version 0.0:
+        Initial Version
+
+This python file will take in two text files and output the angle between the frequency of words of the two files.
+
+"""
+
+__author__ = "Ben Zheng"
+__copyright__ = "MIT License"
+__credits__ = []
+__license__ = "MIT"
+__version__ = "None"
+__maintainer__ = "Ben Zheng"
+__email__ = ""
+__status__ = "Prototype"
+
+import math
+import string
+import sys
+
+#Read the text file input
+def read_file(filename):
+    """
+    Read a text file of filename and return the list of text from the file.
+
+    :param filename: the text file
+    :return: return a list of text
+    """
+
+    try:
+        fp = open(filename)
+        L = fp.readlines()
+    except IOError:
+        print "Error opening the file ", filename
+        sys.exit()
+    return L
+
+#Break the list of words into individual words.
+def get_words_from_list(L):
+    """
+    Reads a list of words from from read_file and return list of all of the words in the list. Duplicate words will be
+    included.
+
+    :param L: List of text
+    :return: list of words
+    """
+
+    word_list = []
+    for line in L:
+        words_in_the_line = get_words_from_list(line)
+        word_list = word_list + words_in_the_line
+    return word_list
+
+#Count the frequency of each word in the list
+def count_frequency(word_list):
+    """
+
+    :param word_list:
+    :return:
+    """
+    Pass
+
+#Sort the list
+
+
+
+#Compute the word frequency of each file.
+
+
+#Calculate the inner product of the two files.
+
+
+if __name__ == "__main__":
+    main()
