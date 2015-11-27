@@ -67,14 +67,37 @@ def count_frequency(word_list):
     Pass
 
 #Sort the list
+def insertion_sort(word_list):
+    """
+
+    :param word_list:
+    :return:
+    """
+    Pass
 
 
 
 #Compute the word frequency of each file.
+def word_frequencies_for_text_file(filename):
+    """
 
+    :param filename:
+    :return:
+    """
+    Pass
 
 #Calculate the inner product of the two files.
+def inner_product(list1, list2):
+    """
 
+    :param list1:
+    :param list2:
+    :return:
+    """
+    Pass
+
+def main():
+    Pass
 
 if __name__ == "__main__":
     main()
