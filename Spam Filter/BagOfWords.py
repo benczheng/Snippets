@@ -61,10 +61,19 @@ def get_words_from_list(L):
 def count_frequency(word_list):
     """
 
-    :param word_list:
-    :return:
+    :param word_list: A list of words
+    :return: Returns a list in the form of a pair (word, frequency)
     """
-    Pass
+    L = []
+    for new_word in word_list:
+        for entry in L:
+            if new_word == entry[0]:
+                entry [1] = entry[1] + 1
+                break
+            else:
+                L.append([new_word,1])
+    return L
+
 
 #Sort the list
 def insertion_sort(word_list):
