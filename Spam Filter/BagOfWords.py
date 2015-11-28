@@ -30,7 +30,7 @@ def read_file(filename):
     Read a text file of filename and return the list of text from the file.
 
     :param filename: the text file
-    :return: return a list of text
+    :return: return a list of text 
     """
 
     try:
@@ -48,7 +48,7 @@ def get_words_from_list(L):
     included.
 
     :param L: List of text
-    :return: list of words 
+    :return: list of words
     """
 
     word_list = []
