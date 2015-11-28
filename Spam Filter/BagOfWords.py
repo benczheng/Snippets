@@ -69,9 +69,10 @@ def count_frequency(word_list):
 #Sort the list
 def insertion_sort(word_list):
     """
+    Goes through the list and sort the word_list by adjusting the pivot
 
-    :param word_list:
-    :return:
+    :param word_list: a list of words
+    :return: a sorted list of words
     """
     Pass
 
