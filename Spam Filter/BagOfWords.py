@@ -47,7 +47,7 @@ def get_words_from_list(L):
     Reads a list of words from from read_file and return list of all of the words in the list. Duplicate words will be
     included.
 
-    :param L: List of text 
+    :param L: List of text
     :return: list of words
     """
 
