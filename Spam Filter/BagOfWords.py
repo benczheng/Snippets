@@ -83,7 +83,14 @@ def insertion_sort(word_list):
     :param word_list: a list of words
     :return: a sorted list of words
     """
-    Pass
+    for j in range(len(word_list)):
+        key = word_list[j]
+        i = j-1
+        while i>-1 and word_list[i]>key:
+            word_list[i+1] = word_list[i]
+            i = i-1
+        word_list[i+1] = key
+    return word_list
 
 
 
