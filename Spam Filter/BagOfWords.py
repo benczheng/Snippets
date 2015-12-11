@@ -92,8 +92,6 @@ def insertion_sort(word_list):
         word_list[i+1] = key
     return word_list
 
-
-
 #Compute the word frequency of each file.
 def word_frequencies_for_text_file(filename):
     """
