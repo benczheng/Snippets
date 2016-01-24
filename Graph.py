@@ -13,8 +13,13 @@ __maintainer__ = "Ben Zheng"
 __email__ = ""
 __status__ = "Prototype"
 
-'''A Naive implementation to find seating arrangement to find the maximum permutation. '''
 def naive_max_perm(M, A=None):
+	"""
+
+	:param M: Matrix
+	:param A: Use for base case
+	:return: Return the maximum permutation
+	"""
 	if A is None:
 		A = set(range(len(M)))
 	if len(A) == 1: #Base Case
@@ -26,8 +31,13 @@ def naive_max_perm(M, A=None):
 		return naive_max_perm(M, A)
 	return A
 
-'''A FIFO approach to maximum permutation that shoud be O(M)'''
 def max_perm(M):
+	"""
+
+	:param M: Martix
+	:return: the maximum permutation with O(M)
+	;Note: FIFO
+	"""
 	n = len(M)
 	A = set(range(n))
 	count = [0]*n
